@@ -1,4 +1,5 @@
-baseURL = "http://example.org/"
+baseURL = "https://jacopofar.github.io/blog/"
 languageCode = "en-us"
 title = "Hugo Site, WIP"
 theme = "hugo-tranquilpeak-theme"
+relativeurls = true
