@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # remove previous publication
 rm -rf public
 mkdir public
@@ -10,7 +11,5 @@ hugo
   
 # commit the changes in the clone and push them back to the local gh-pages branch
 echo "insert commit message"
-read PUBLISH_MESSAGE && cd public && git add --all && git commit -m "$PUBLISH_MESSAGE"  && git push origin gh-pages
+read PUBLISH_MESSAGE && cd public && git add --all && git remote remove origin && git remote add origin git@github.com:jacopofar/blog.git && git commit -m "$PUBLISH_MESSAGE"  && git push origin gh-pages
 
-# publish
-git push upstream gh-pages
