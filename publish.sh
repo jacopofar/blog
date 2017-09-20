@@ -9,7 +9,8 @@ git clone .git --branch gh-pages public
 hugo
   
 # commit the changes in the clone and push them back to the local gh-pages branch
-read PUBLISH_MESSAGE && cd public && git add --all && git commit -m $PUBLISH_MESSAGE  && git push origin gh-pages
+echo "insert commit message"
+read PUBLISH_MESSAGE && cd public && git add --all && git commit -m "$PUBLISH_MESSAGE"  && git push origin gh-pages
 
 # publish
 git push upstream gh-pages
