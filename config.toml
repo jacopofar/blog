@@ -3,3 +3,6 @@ languageCode = "en-us"
 title = "Hugo Site, WIP"
 theme = "hugo-tranquilpeak-theme"
 relativeurls = true
+[params]
+  [[params.customJS]]
+    src = "js/piwik.js"
