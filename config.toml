@@ -1,4 +1,4 @@
-baseURL = "https://jacopofar.github.io/"
+baseURL = "https://jacopofar.github.io/blog"
 languageCode = "en-us"
 title = "Hugo Site, WIP"
 theme = "hugo-tranquilpeak-theme"
